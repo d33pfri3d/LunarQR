@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./App.css";
 import QRCodeStyling, { FileExtension } from "qr-code-styling";
 import icon from "./assets/logo.svg";
 import { ReactComponent as Logo } from "./assets/mp.svg";
