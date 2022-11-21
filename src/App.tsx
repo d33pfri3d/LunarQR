@@ -4,10 +4,11 @@ import icon from "./assets/logo.svg";
 import { ReactComponent as Logo } from "./assets/mp.svg";
 
 const qrCode = new QRCodeStyling({
-  width: 300,
-  height: 300,
+  width: 200,
+  height: 200,
   image: icon,
   margin: 5,
+  type: "svg",
   dotsOptions: {
     color: "#7D00FF",
     type: "dots",
@@ -18,8 +19,11 @@ const qrCode = new QRCodeStyling({
     hideBackgroundDots: true,
   },
   cornersSquareOptions: {
-    type: "extra-rounded",
+    type: "dot",
     color: "#7D00FF",
+  },
+  cornersDotOptions: {
+    type: "dot",
   },
 });
 
@@ -64,7 +68,7 @@ function App() {
   return (
     <div className="flex justify-center items-center h-full flex-col gap-y-5">
       <Logo />
-      <div className="bg-gray-900 p-10 w-1/3 rounded-3xl">
+      <div className="bg-gray-900 p-10 w-4/5 rounded-3xl">
         <div ref={ref} className="justify-center flex" />
         <input
           value={url}
