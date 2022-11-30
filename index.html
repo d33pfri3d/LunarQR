@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lunar QR</title>
+    <title>Lunar Pad</title>
   </head>
   <body class="h-full overflow-hidden">
     <div id="root" class="h-full"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- <script type="module" src="/src/main.tsx"></script> -->
     <script>
       !function (t, e, n, s, a, c, i, o, p) {
         t.AppsFlyerSdkObject = a, t.AF = t.AF || function () {
@@ -19,7 +19,7 @@
           p.parentNode.insertBefore(o, p)
       }(window, document, "script", 0, "AF", "banners", { banners: { key: "97cac66d-64a8-4609-9bfb-a00f2bd6bce8" } });
       // Smart Banners are by default set to the max z-index value, so they won't be hidden by the website elements. This can be changed if you want some website components to be on top of the banner.
-      AF('banners', 'showBanner', { bannerZIndex: 1000, additionalParams: { p1: "v1", p2: "v2" } });
+      AF('banners', 'showBanner', { bannerZIndex: 1000 });
     </script>
   </body>
 </html>
