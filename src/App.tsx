@@ -68,7 +68,7 @@ function App() {
   return (
     <div className="flex justify-center items-center h-full flex-col gap-y-5">
       <Logo />
-      <div className="bg-gray-900 p-10 w-4/5 rounded-3xl">
+      {/* <div className="bg-gray-900 p-10 w-4/5 rounded-3xl">
         <div ref={ref} className="justify-center flex" />
         <input
           value={url}
@@ -82,7 +82,7 @@ function App() {
         >
           Download
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
